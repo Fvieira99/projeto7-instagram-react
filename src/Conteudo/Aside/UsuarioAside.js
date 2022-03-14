@@ -1,10 +1,12 @@
 export default function UsuarioAside(props) {
+	const { usuario, nome, img } = props;
+
 	return (
 		<div class="usuario">
-			<img src={props.img} />
+			<img src={img} />
 			<div class="texto">
-				<strong>{props.usuario}</strong>
-				{props.nome}
+				<strong>{usuario}</strong>
+				{nome}
 			</div>
 		</div>
 	);

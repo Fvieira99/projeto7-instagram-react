@@ -26,12 +26,14 @@ export default function Stories() {
 }
 
 function Story(props) {
+	const { img, usuario } = props;
+
 	return (
 		<div class="story">
 			<div class="imagem">
-				<img src={props.img} />
+				<img src={img} />
 			</div>
-			<div class="usuario">{props.usuario}</div>
+			<div class="usuario">{usuario}</div>
 		</div>
 	);
 }

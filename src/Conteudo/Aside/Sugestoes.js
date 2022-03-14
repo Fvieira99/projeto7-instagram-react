@@ -6,23 +6,23 @@ export default function Sugestoes() {
 			status: "Segue você",
 		},
 		{
-			nome: "bad.vibes.memes",
-			img: "assets/img/bad.vibes.memes.svg",
+			nome: "chibirdart",
+			img: "assets/img/chibirdart.svg",
 			status: "Segue você",
 		},
 		{
-			nome: "bad.vibes.memes",
-			img: "assets/img/bad.vibes.memes.svg",
+			nome: "razoesparaacreditar",
+			img: "assets/img/razoesparaacreditar.svg",
+			status: "Novo no Instagram",
+		},
+		{
+			nome: "adorable_animals",
+			img: "assets/img/adorable_animals.svg",
 			status: "Segue você",
 		},
 		{
-			nome: "bad.vibes.memes",
-			img: "assets/img/bad.vibes.memes.svg",
-			status: "Segue você",
-		},
-		{
-			nome: "bad.vibes.memes",
-			img: "assets/img/bad.vibes.memes.svg",
+			nome: "smallcutecats",
+			img: "assets/img/smallcutecats.svg",
 			status: "Segue você",
 		},
 	];
@@ -44,13 +44,15 @@ export default function Sugestoes() {
 }
 
 function Sugestao(props) {
+	const { nome, status, img } = props;
+
 	return (
 		<div class="sugestao">
 			<div class="usuario">
-				<img src={props.img} />
+				<img src={img} />
 				<div class="texto">
-					<div class="nome">{props.nome}</div>
-					<div class="razao">{props.status}</div>
+					<div class="nome">{nome}</div>
+					<div class="razao">{status}</div>
 				</div>
 			</div>
 

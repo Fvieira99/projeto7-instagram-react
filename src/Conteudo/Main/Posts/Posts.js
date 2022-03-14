@@ -1,21 +1,21 @@
-import Post from "./Post/Post";
+import Post from "./Post";
 
 export default function Posts() {
 	const posts = [
 		{
 			usuario: "meowed",
-			imgUsuario: "assets/img/meowed.svg",
+			avatar: "assets/img/meowed.svg",
 			conteudo: "assets/img/gato-telefone.svg",
-			curtidas: "assets/img/respondeai.svg",
-			perfilCurtida: "respondeai",
+			avatarCurtida: "assets/img/respondeai.svg",
+			usuarioCurtida: "respondeai",
 			qtdCurtidas: "outras 101.523 pessoas",
 		},
 		{
 			usuario: "barked",
-			imgUsuario: "assets/img/barked.svg",
+			avatar: "assets/img/barked.svg",
 			conteudo: "assets/img/dog.svg",
-			curtidas: "assets/img/adorable_animals	.svg",
-			perfilCurtida: "adorable_animals",
+			avatarCurtida: "assets/img/adorable_animals	.svg",
+			usuarioCurtida: "adorable_animals",
 			qtdCurtidas: "outras 99.159",
 		},
 	];
@@ -24,10 +24,10 @@ export default function Posts() {
 			{posts.map((post) => (
 				<Post
 					usuario={post.usuario}
-					imgUsuario={post.imgUsuario}
+					avatar={post.avatar}
 					conteudo={post.conteudo}
-					curtidas={post.curtidas}
-					perfilCurtida={post.perfilCurtida}
+					avatarCurtida={post.avatarCurtida}
+					usuarioCurtida={post.usuarioCurtida}
 					qtdCurtidas={post.qtdCurtidas}
 				/>
 			))}
